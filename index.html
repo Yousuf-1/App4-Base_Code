@@ -25,7 +25,204 @@ blah, blah, blah, blah
 
    <head> 
       
-	   PUT YOUR OLD CODE IN HERE
+	    <title>Hello World</title>  
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <link rel="stylesheet" href="w3.css">
+      <link rel="stylesheet" href="w3-colors-flat.css">
 	   
-   </body>
+	</head>
+	
+ 
+
+<script>
+	
+// The following code lets you know when the file was last modified.
+// This will help you know if you are looking at the new version of the file or if there is a delay on GitHub.
+       var docMod = document.lastModified;
+     //  alert("This file last modified  " + docMod);
+       console.log("This file last modified  " + docMod);
+// If you find the alert box annoying, comment out that line and timestamp will still show up in the debugging console
+
+	var vindicator_count = 0;
+        var evoker_count = 0;
+	var vindicatorPercent = 0;
+	var evokerPercent = 0;
+
+
+        function vindicatorAdd(){
+           vindicator_count = vindicator_count + 1;
+
+        }
+
+        function evokerAdd(){
+            evoker_count = evoker_count + 1;
+        }
+	
+	function resultscalculator(){
+	var resultText = document.getElementById("results");
+	vindicatorPercent = vindicator_count / 6 * 100;
+	evokerPercent = evoker_count / 6 * 100;
+	resultText.innerHTML = 
+		
+		"Probability that you would be a Vindicator =" + vindicatorPercent + "%" + 
+		
+		"<br> <br> Probability that you would be an Evoker =" + evokerPercent + "%" +
+		
+		"<br> <br> Did you get 50%? Then congrats, you're a PILLAGER!";                    //results output
+	
+	}
+
+	
+	
+	
+</script>
+	
+	<style>
+       	img, object{
+            	max-height:90%;
+        		max-width:90%;
+        	}
+.body {
+     margin: 0em;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    overflow-y: auto;
+    z-index: 0;
+    background-color: hsl(0,0%,100%);
+}
+
+  .page:target {
+    left: 0vw;
+    z-index: 1;
+}
+	</style>
+
+	
+	
+<body>
+
+	
+	<div id="header" class="w3-container w3-flat-carrot">
+	<h1><img style="transform: scaleX(-1);" src="https://static.wikia.nocookie.net/minecraft/images/5/52/Evoker_celebrating.gif" alt="evoker" width=auto height="333"> 
+		Are you an EVOKER or VINDICATOR? 
+		<img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/06/Vindicator_celebrating.gif" alt="vindicator" width=auto height="333"></h1> 
+</div>
+	
+<div id="content" class="w3-container">
+	<p>Have you ever been playing minecraft and thought to yourself "I wonder what illager I would be?" while getting your home raided. Well you've come to the right place! Answer a few short questions to find out how likely you are to be a Vindicator or Evoker!</p>
+	
+	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+	
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+ 	
+	
+	
+<div class="page" id="one"> <!--start of page one-->
+	<div id="header" class="w3-container w3-flat-carrot"> 
+		<h1>Question 1</h1> <!--page one header-->
+	</div>
+	
+    	<div id="content" class="w3-container"> <!--page one content start-->
+       		 <p>Are you more realistic or imaginative?</p> <!--page one question-->
+		
+	<a href="#two"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Realistic</a> <!--yes button-->
+	<a href="#two"  onclick="evokerAdd();" class="w3-btn w3-black"> Imaginative</a> <!--no button-->
+    	
+	</div>
+</div>
+
+<div class="page" id="two"> <!--page two start-->
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 2</h1> <!--page two header-->
+	</div>
+	<img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/d1/Enchanted_Diamond_Sword.gif">
+	
+	<div id="content" class="w3-container"> <!--page two content start-->
+		<p>Do you prefer a weaponized or weaponless approach?</p> <!--page two question-->
+		
+	<a href="#three"  onclick="evokerAdd();" class="w3-btn w3-black"> Weaponized</a> <!--yes button-->
+	<a href="#three"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Weaponless</a> <!--no button-->
+		
+	</div>
+</div>	
+<div class="page" id="three"> <!--page three start-->
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 3</h1> <!--page three header-->
+	</div>
+	
+	<div id="content" class="w3-container"> <!--page three content start-->
+		<p>Are you more likely to blend in when part of a team or do you stand out?</p> <!--page three question-->
+		
+	<a href="#four"  onclick="evokerAdd();" class="w3-btn w3-black"> Blend In</a> <!--yes button-->
+	<a href="#four"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Stand Out</a> <!--no button-->
+	
+	</div>
+</div>
+<div class="page" id="four"> <!--page four start-->
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 4</h1> <!--page four header-->
+	</div>
+	
+	<div id="content" class="w3-container"> <!--page four content start-->
+		<p>Do you prefer an aggressive or meek approach?</p> <!--page four question-->
+		
+	<a href="#five"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Aggressive</a> <!--yes button-->
+	<a href="#five"  onclick="evokerAdd();" class="w3-btn w3-black"> Meek</a> <!--no button-->
+	
+	</div>
+</div>
+<div class="page" id="five"> <!--page five start-->
+	<div class="w3-container w3-flat-carrot"> 
+		<h1>Question 5</h1> <!--page five header-->
+	</div>
+	
+	<div id="content" class="w3-container"> <!--page five content start-->
+		<p>Are you mostly an extrovert or introvert?</p> <!--page five question-->
+		
+	<a href="#six"  onclick="evokerAdd();" class="w3-btn w3-black"> Extrovert</a> <!--yes button-->
+	<a href="#six"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Introvert</a> <!--no button-->
+	
+	</div>
+</div>
+<div class="page" id="six"> <!--page six start-->
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 6</h1> <!--page six header-->
+	</div>
+	
+	<div id="content" class="w3-container"> <!--page six content start-->
+		<p>Do you like to be adventurous or are you more comfortable being at or close to home?</p> <!--page six question-->
+		
+	<a href="#resultspage"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Adventurous</a> <!--yes button-->
+	<a href="#resultspage"  onclick="evokerAdd();" class="w3-btn w3-black"> Close To/At Home</a> <!--no button-->
+	
+	</div>
+</div> <!--start of results page-->
+<div class="page" id="resultspage"> 
+	<div class="w3-container w3-flat-carrot"> <!--results page-->
+		<h1>Results</h1> <!--results page header-->
+
+	</div> <!--start of results page content-->
+	
+	<div id="content" class="w3-container"> <!--results page content below-->
+		 <p id="results"></p> <!--results paragraph-->
+		
+	<a href = "#resultspage" onclick="resultscalculator();" class="w3-btn w3-black"> Results</a> <!--results button-->
+		
+	
+	</div>
+</div>
+<footer class="w3-bottom w3-container w3-flat-carrot">
+	<p>DIY!</p>
+</footer>
+
+</body>
+</html>
+	
 </html>
