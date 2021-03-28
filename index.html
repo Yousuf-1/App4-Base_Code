@@ -81,6 +81,10 @@ blah, blah, blah, blah
 </script>
 	
 	<style>
+		
+		p {color:red; } 
+		
+		
        	img, object{
             	max-height:90%;
         		max-width:90%;
@@ -110,17 +114,19 @@ blah, blah, blah, blah
 	
 <body>
 
-	
+	<div style="text-align: center">
+    
 	<div id="header" class="w3-container w3-flat-dark-green">
-	<h1>  <img src="https://static.wikia.nocookie.net/minecraft/images/5/52/Evoker_celebrating.gif" alt="evoker" width=auto height="333"> 
+	<h1> <div style="text-align: center"> <img src="https://static.wikia.nocookie.net/minecraft/images/5/52/Evoker_celebrating.gif" alt="evoker" width=auto height="333"> 
 		Are you an EVOKER or VINDICATOR? 
 		<img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/06/Vindicator_celebrating.gif" alt="vindicator" width=auto height="333"></h1> 
 </div>
 	
 <div id="content" class="w3-container">
-	<p>Have you ever been playing Minecraft and thought to yourself "I wonder what illager I would be?" while getting your home raided? Well you've come to the right place! Answer a few short questions to find out how likely you are to be a Vindicator or Evoker!</p>
 	
-	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> <!---get started button-->
+		<p> Have you ever been playing Minecraft and thought to yourself "I wonder what illager I would be?" while getting your home raided? Well you've come to the right place! Answer a few short questions to find out how likely you are to be a Vindicator or Evoker!</p>
+	
+	<a style=text-align= "center" href="#one" class="w3-btn w3-grey w3-round" > Get Started </a> <!---get started button-->
 	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
@@ -213,15 +219,16 @@ blah, blah, blah, blah
 	</div> <!--start of results page content-->
 	
 	<div id="content" class="w3-container"> <!--results page content below-->
-		<p id="results"> </p> <!--results paragraph-->
+		<p id="results">  <!--results paragraph-->
 		
 	<a href = "#resultspage" onclick="resultscalculator();" class="w3-btn w3-black"> Results</a> <!--results button-->
-		
+		</p>
 	
 	</div>
 </div>
+<div style="text-align: left">
 <footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
+	DIY!
 </footer>
 
 </body>
