@@ -23,7 +23,7 @@ Known Issues:
 blah, blah, blah, blah
 -->
 
-	<head> 
+<head> 
       
 	<title>Hello World</title>  
 		
@@ -32,7 +32,7 @@ blah, blah, blah, blah
       <link rel="stylesheet" href="w3.css">
       <link rel="stylesheet" href="w3-colors-flat.css">
 	   
-	</head>
+</head>
 	
  
 
@@ -52,19 +52,19 @@ blah, blah, blah, blah
 
 
         function vindicatorAdd(){ 			//vindicator "tally" function
-           vindicator_count = vindicator_count + 1;
+        	vindicator_count = vindicator_count + 1;
 
         }
 
         function evokerAdd(){ 				//vindicator "tally" function
-            evoker_count = evoker_count + 1;
+        	evoker_count = evoker_count + 1;
         }
 	
 	function resultscalculator(){ 			//results function
-	var resultText = document.getElementById("results");
-	vindicatorPercent = vindicator_count / 6 * 100;
-	evokerPercent = evoker_count / 6 * 100;
-	resultText.innerHTML = 				//results output on results page
+		var resultText = document.getElementById("results");
+		vindicatorPercent = vindicator_count / 6 * 100;
+		evokerPercent = evoker_count / 6 * 100;
+		resultText.innerHTML = 				//results output on results page
 		
 		"<img style=\'transform: scaleX(-1);\' src=\'https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/7c/Ravager_Rider_%28Vindicator%29.png'\>" + //vindicator gif
 		"<img src=\'https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/06/Vindicator_celebrating.gif\' width=\'auto\' height=\'300\'>" + //vindicator gif
@@ -96,29 +96,32 @@ blah, blah, blah, blah
 		p {color:red; } 
 		
 		
-       	img, object{
-            	max-height:90%;
-        		max-width:90%;
-        	}
-.body {
-     margin: 0em;
-}
+		img, object{
+			max-height:90%;
+				max-width:90%;
+			}
+		
+		
+		.body {
+		     margin: 0em;
+		}
 
-.page {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: -100vw;
-    overflow-y: auto;
-    z-index: 0;
-    background-color: hsl(0,0%,100%);
-}
+		.page {
+		    width: 100vw;
+		    height: 100vh;
+		    position: fixed;
+		    top: 0;
+		    left: -100vw;
+		    overflow-y: auto;
+		    z-index: 0;
+		    background-color: hsl(0,0%,100%);
+		}
 
-  .page:target {
-    left: 0vw;
-    z-index: 1;
-}
+		  .page:target {
+		    left: 0vw;
+		    z-index: 1;
+		}
+	
 	</style>
 
 	
@@ -126,9 +129,10 @@ blah, blah, blah, blah
 <body>
 
 <div style="text-align: center">
-    <div id="header" class="w3-container w3-flat-dark-green"> <!---start of title page -->
+	<div id="header" class="w3-container w3-flat-dark-green"> <!---start of title page -->
 		
-		<h1>    <img style="transform: scaleX(-1);" src="https://static.wikia.nocookie.net/minecraft/images/5/52/Evoker_celebrating.gif" alt="evoker" width=auto height="333"> <!---evoker gif--->
+		<h1>    
+			<img style="transform: scaleX(-1);" src="https://static.wikia.nocookie.net/minecraft/images/5/52/Evoker_celebrating.gif" alt="evoker" width=auto height="333"> <!---evoker gif--->
 			Are you an EVOKER or VINDICATOR? <!---main title--->
 			<img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/06/Vindicator_celebrating.gif" alt="vindicator" width=auto height="333"> <!---vindicator gif--->
 		</h1> 
@@ -137,17 +141,20 @@ blah, blah, blah, blah
 	
 	<div id="content" class="w3-container">
 	
-		<p>     Have you ever been playing Minecraft and thought to yourself "If I were in Minecraft, I wonder what illager I would spawn as?" while getting your home raided? Well you've come to the right place! 
+		<p>     
+			Have you ever been playing Minecraft and thought to yourself "If I were in Minecraft, I wonder what illager I would spawn as?" while getting your home raided? Well you've come to the right place! 
 			Answer a few short questions to find out how likely you are to be a Vindicator or Evoker! <!---txt--->
 		</p>
 		
-		<p>     Background Information: <br>In the game Minecraft, an evoker uses magic to summon vexes and evoker fangs and usually spawns in woodland mansions and raids. 
+		<p>     
+			Background Information: <br>In the game Minecraft, an evoker uses magic to summon vexes and evoker fangs and usually spawns in woodland mansions and raids. 
 			A vindicator attacks with an iron axe and breaks down doors of homes to get to the player. They also spawn in woodland mansions or raids. Both mobs are hostile to the player. <!---bkgrd info--->
 		</p>
 		
 		<a href="#one" class="w3-btn w3-grey w3-round" > Get Started </a> <!---get started button-->
 	
-		<p>     The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- 
+		<p>     
+			The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- 
 			it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.
 		</p>
  	
@@ -157,17 +164,19 @@ blah, blah, blah, blah
 	<div id="header" class="w3-container w3-flat-nephritis"> 
 		
 		<h1>Question 1</h1> <!--page one header-->
+	
 	</div>
 	
     	<div id="content" class="w3-container"> <!--page one content start-->
        		
-		<p>     <img src=https://media.tenor.com/images/0561176a31daf989e09ea93b2948310b/tenor.gif width=auto height="200"> <!--gif-->
+		<p>     
+			<img src=https://media.tenor.com/images/0561176a31daf989e09ea93b2948310b/tenor.gif width=auto height="200"> <!--gif-->
 			 Are you more realistic or imaginative? <!--page one question-->
 			<img src=https://i2.wp.com/wellsbaum.blog/wp-content/uploads/2019/01/imagination-is-a-mental-scratch-pad.gif?fit=500%2C309&ssl=1 width=auto height="200"> <!--gif-->
 		</p> 
 		
-	<a href="#two"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Realistic</a> <!--realistic button-->
-	<a href="#two"  onclick="evokerAdd();" class="w3-btn w3-black"> Imaginative</a> <!--imaginative button-->
+		<a href="#two"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Realistic</a> <!--realistic button-->
+		<a href="#two"  onclick="evokerAdd();" class="w3-btn w3-black"> Imaginative</a> <!--imaginative button-->
     	
 	</div>
 	
@@ -177,18 +186,20 @@ blah, blah, blah, blah
 	<div class="w3-container w3-flat-emerald">
 		
 		<h1>Question 2</h1> <!--page two header-->
+	
 	</div>
 	
 	
 	<div id="content" class="w3-container"> <!--page two content start-->
 		
-		<p>     <img src=https://cdn.dribbble.com/users/1187836/screenshots/6750781/overview_3.gif width=auto height="200"> <!--gif-->
+		<p>     
+			<img src=https://cdn.dribbble.com/users/1187836/screenshots/6750781/overview_3.gif width=auto height="200"> <!--gif-->
 			Do you prefer a weaponized or weaponless approach? <!--page two question-->
 			<img src=https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8yMjY1NzM4OC9vcmlnaW4uZ2lmIiwiZXhwaXJlc19hdCI6MTY2MjQzMTY2OX0.EmSUyPZSrfjjC7dPB5hRidP-833zLj514eYRaRa48Ys/img.gif?width=210 width=auto height="200"> <!--gif-->
 		</p> 
 		
-	<a href="#three"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Weaponized</a> <!--weaponized button-->
-	<a href="#three"  onclick="evokerAdd();" class="w3-btn w3-black"> Weaponless</a> <!--weaponless button-->
+		<a href="#three"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Weaponized</a> <!--weaponized button-->
+		<a href="#three"  onclick="evokerAdd();" class="w3-btn w3-black"> Weaponless</a> <!--weaponless button-->
 		
 	</div>
 	
@@ -198,17 +209,19 @@ blah, blah, blah, blah
 	<div class="w3-container w3-flat-green-sea">
 		
 		<h1>Question 3</h1> <!--page three header-->
+	
 	</div>
 	
 	<div id="content" class="w3-container"> <!--page three content start-->
 		
-		<p>     <img src=https://media.tenor.com/images/4833016b1ae53440ef7dd9adb2f9bbdc/tenor.gif width=auto height="200"> <!--gif-->
+		<p>    
+			<img src=https://media.tenor.com/images/4833016b1ae53440ef7dd9adb2f9bbdc/tenor.gif width=auto height="200"> <!--gif-->
 			Are you more likely to blend in when part of a team or do you stand out? <!--page three question-->
 			<img src=https://cdn.dribbble.com/users/1618453/screenshots/4240561/unique.gif width=auto height="200"> <!--gif-->
 		</p> 
 		
-	<a href="#four"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Blend In</a> <!--blend in button-->
-	<a href="#four"  onclick="evokerAdd();" class="w3-btn w3-black"> Stand Out</a> <!--stand out button-->
+		<a href="#four"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Blend In</a> <!--blend in button-->
+		<a href="#four"  onclick="evokerAdd();" class="w3-btn w3-black"> Stand Out</a> <!--stand out button-->
 	
 	</div>
 	
@@ -218,17 +231,19 @@ blah, blah, blah, blah
 	<div class="w3-container w3-flat-alizarin ">
 		
 		<h1>Question 4</h1> <!--page four header-->
+	
 	</div>
 	
 	<div id="content" class="w3-container"> <!--page four content start-->
 		
-		<p>     <img src=http://24.media.tumblr.com/e60709a5ba4fc646c0e305683dbcce2d/tumblr_mrcycbesJR1suva8fo1_250.gif width=auto height="200"> <!--gif-->
+		<p>    
+			<img src=http://24.media.tumblr.com/e60709a5ba4fc646c0e305683dbcce2d/tumblr_mrcycbesJR1suva8fo1_250.gif width=auto height="200"> <!--gif-->
 			Do you prefer an aggressive or meek approach? <!--page four question-->
 			<img src=https://media.tenor.com/images/a1d73eff10d005b5b066d4f704834d7f/tenor.gif width=auto height="200"> <!--gif-->
 		</p> 
 		
-	<a href="#five"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Aggressive</a> <!--agressive button-->
-	<a href="#five"  onclick="evokerAdd();" class="w3-btn w3-black"> Meek</a> <!--meek button-->
+		<a href="#five"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Aggressive</a> <!--agressive button-->
+		<a href="#five"  onclick="evokerAdd();" class="w3-btn w3-black"> Meek</a> <!--meek button-->
 	
 	</div>
 	
@@ -238,17 +253,19 @@ blah, blah, blah, blah
 	<div class="w3-container w3-flat-orange"> 
 		
 		<h1>Question 5</h1> <!--page five header-->
+	
 	</div>
 	
 	<div id="content" class="w3-container"> <!--page five content start-->
 		
-		<p>     <img src=https://www.wonderwall.sg/content/dam/wonderwall/images/2020/01/dating-an-extrovert-when-you-are-an-introvert/introvertextrovertdating_1920x1080-lead.gif width=auto height="200"> <!--gif-->
+		<p>     
+			<img src=https://www.wonderwall.sg/content/dam/wonderwall/images/2020/01/dating-an-extrovert-when-you-are-an-introvert/introvertextrovertdating_1920x1080-lead.gif width=auto height="200"> <!--gif-->
 			Are you mostly an extrovert or introvert? <!--page five question-->
 			<img src=https://media.giphy.com/media/dhXnhcwl9GrZK/giphy.gif width=auto height="200"> <!--gif-->
 		</p> 
 		
-	<a href="#six"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Extrovert</a> <!--extrovert button-->
-	<a href="#six"  onclick="evokerAdd();" class="w3-btn w3-black"> Introvert</a> <!--introvert button-->
+		<a href="#six"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Extrovert</a> <!--extrovert button-->
+		<a href="#six"  onclick="evokerAdd();" class="w3-btn w3-black"> Introvert</a> <!--introvert button-->
 	
 	</div>
 	
@@ -258,17 +275,19 @@ blah, blah, blah, blah
 	<div class="w3-container w3-flat-sun-flower">
 		
 		<h1>Question 6</h1> <!--page six header-->
+	
 	</div>
 	
 	<div id="content" class="w3-container"> <!--page six content start-->
 		 
-		<p>     <img src=https://cdn.lifehack.org/wp-content/uploads/2015/03/Adventure.Hobbit.gif width=250 height=auto> <!--gif-->
+		<p>   
+			<img src=https://cdn.lifehack.org/wp-content/uploads/2015/03/Adventure.Hobbit.gif width=250 height=auto> <!--gif-->
 			Do you like to be adventurous or are you more comfortable being at or close to home? <!--page six question-->
 			<img src=https://www.forrent.com/blog/wp-content/uploads/2017/11/homebody-1.gif width=250 height=auto> <!--gif-->
 		</p> 
 		
-	<a href="#resultspage"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Adventurous</a> <!--adventurous button-->
-	<a href="#resultspage"  onclick="evokerAdd();" class="w3-btn w3-black"> Close To/At Home</a> <!--close to/at home button-->
+		<a href="#resultspage"  onclick="vindicatorAdd();" class="w3-btn w3-black"> Adventurous</a> <!--adventurous button-->
+		<a href="#resultspage"  onclick="evokerAdd();" class="w3-btn w3-black"> Close To/At Home</a> <!--close to/at home button-->
 	
 	</div>
 	
@@ -285,7 +304,7 @@ blah, blah, blah, blah
 		
 		<p id="results">  <!--results paragraph-->
 		
-		<a href = "#resultspage" onclick="resultscalculator();" class="w3-btn w3-black"> Results</a> <!--results button-->
+			<a href = "#resultspage" onclick="resultscalculator();" class="w3-btn w3-black"> Results</a> <!--results button-->
 		
 		</p>
 	
